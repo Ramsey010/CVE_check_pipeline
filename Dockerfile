@@ -7,5 +7,5 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY market.py .
-CMD ["python", "market.py"]
+COPY Data_format.py
+CMD ["python", "Data_format.py","--help"]
